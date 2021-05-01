@@ -1,0 +1,7 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+# Tests involve downloading a compressed Fedora image, so skip them.
+override_dh_auto_test:

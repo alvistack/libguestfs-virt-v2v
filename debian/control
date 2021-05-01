@@ -1,0 +1,34 @@
+Source: virt-v2v
+Section: admin
+Priority: optional
+Maintainer: Wong Hoi Sing Edison <hswong3i@pantarei-design.com>
+Build-Depends: debhelper-compat (= 11),
+ autotools-dev,
+ bash-completion,
+ libocaml-compiler-libs-ocaml-dev,
+ libguestfs-dev,
+ libguestfs-ocaml-dev,
+ libjansson-dev,
+ libosinfo-1.0-dev,
+ libpcre2-dev,
+ libvirt-dev,
+ libxml2-dev,
+ pkg-config,
+# libguestfs-tools <!nocheck>,
+Standards-Version: 4.5.0
+Homepage: https://libguestfs.org/
+Vcs-Browser: https://salsa.debian.org/libvirt-team/virt-v2v
+Vcs-Git: https://salsa.debian.org/libvirt-team/virt-v2v.git
+Rules-Requires-Root: no
+
+Package: virt-v2v
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ binutils,
+ mawk,
+ libguestfs-tools,
+ xz-utils,
+Conflicts: libguestfs-tools (<< 1:1.42.0),
+Description: virtual-to-virtual machine converter
+ Virt-v2v is a GUI interface to convert a virtual machine to run as
+ virtual machine on KVM.

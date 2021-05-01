@@ -1,0 +1,5 @@
+virt-v2v (1.44.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Wong Hoi Sing Edison <hswong3i@pantarei-design.com>  Sat, 01 May 2021 22:38:11 +0800

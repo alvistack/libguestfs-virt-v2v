@@ -1,0 +1,12 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: virt-v2v
+Upstream-Contact: <preferred name and address to reach the upstream project>
+Source: <url://example.com>
+
+Files: *
+Copyright: 2009-2019 Red Hat Inc.
+License: GPL-2.0+
+
+Files: debian/*
+Copyright: 2021 Wong Hoi Sing Edison <hswong3i@pantarei-design.com>
+License: GPL-2+

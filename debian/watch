@@ -1,0 +1,2 @@
+version=4
+https://download.libguestfs.org/virt-v2v/(.*)-stable/virt-v2v-(.*)\.tar\.gz

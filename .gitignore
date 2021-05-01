@@ -45,6 +45,7 @@ Makefile.in
 /config.status
 /config.sub
 /configure
+/debian/*
 /depcomp
 /docs/stamp-virt-v2v*.pod
 /docs/virt-v2v.1
