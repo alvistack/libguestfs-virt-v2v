@@ -1,8 +1,18 @@
+<h1 id="tempory-apt-repo-for-virt-v2v">Tempory APT repo for virt-v2v</h1>
+<p>Mainly used by <a href="https://github.com/alvistack/ansible-role-libvirt">https://github.com/alvistack/ansible-role-libvirt</a></p>
+<p>Also see:</p>
+<ul>
+<li><a href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=966675#20">https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=966675#20</a></li>
+<li><a href="https://github.com/vagrant-libvirt/vagrant-libvirt/issues/1256">https://github.com/vagrant-libvirt/vagrant-libvirt/issues/1256</a></li>
+<li><a href="https://github.com/savoury1/ubuntu-rolling/issues/1">https://github.com/savoury1/ubuntu-rolling/issues/1</a></li>
+</ul>
+<h2 id="installation">Installation</h2>
 <pre><code>#!/bin/bash
 
 set -euxo pipefail
 
-curl -skL &quot;https://keyserver.ubuntu.com/pks/lookup?op=get&amp;search=0x2AD86432DB495A1952DCD3E80F0D6A60644E28D3&quot; | sudo apt-key add
-sudo apt-add-repository &quot;deb https://alvistack.github.io/libguestfs-virt-v2v stable main&quot;
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 644E28D3
+sudo apt-add-repository &quot;deb [arch=amd64] https://alvistack.github.io/libguestfs-virt-v2v stable main&quot;
+sudo apt update
 sudo apt -y install virt-v2v
 </code></pre>
