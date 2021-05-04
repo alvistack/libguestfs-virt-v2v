@@ -1,0 +1,20 @@
+Package: virt-v2v
+Priority: optional
+Section: admin
+Installed-Size: 8936
+Maintainer: Wong Hoi Sing Edison <hswong3i@pantarei-design.com>
+Architecture: amd64
+Version: 1.44.0-1
+Depends: libc6 (>= 2.29), libglib2.0-0 (>= 2.12.0), libguestfs0 (>= 1:1.42), libjansson4 (>= 2.3), libosinfo-1.0-0 (>= 1.7.1~), libpcre2-8-0 (>= 10.22), libvirt0 (>= 1.2.8~rc2), libxml2 (>= 2.7.4), binutils, mawk, libguestfs-tools, xz-utils
+Conflicts: libguestfs-tools (<< 1:1.42.0)
+Filename: pool/main/v/virt-v2v/virt-v2v_1.44.0-1_amd64.deb
+Size: 1402740
+MD5sum: 596df19801698d6d885fa3556aa9db26
+SHA1: d8d6f9ebc339e65c4fd2d44880a0be6fbbbe00c9
+SHA256: 775f6755b004cf9caf1829919e25fd3ec6c309d0c09cc05af87a03338b3330e1
+SHA512: 2a278dda79e088fc13e5673b3b3a39bb87141cca6918880c47953d1f726d5d49f0de4c8dcb11d3eeed78e094c9a047bc9f0bef12bb97cda155da0d8c18cd6d67
+Description: virtual-to-virtual machine converter
+ Virt-v2v is a GUI interface to convert a virtual machine to run as
+ virtual machine on KVM.
+Homepage: https://libguestfs.org/
+
