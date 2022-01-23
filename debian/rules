@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+
+SHELL := /bin/bash
+
+override_dh_auto_install:
+	dh_auto_install
+	find debian/virt-v2v -name '*.la' -delete
+
+override_dh_auto_test:
+
+override_dh_auto_clean:
+
+%:
+	dh $@

@@ -1,0 +1,7 @@
+*.substvars
+*debhelper*
+.debhelper
+autoreconf.*
+files
+tmp
+virt-v2v
