@@ -1,0 +1,50 @@
+Source: virt-v2v
+Section: admin
+Priority: optional
+Standards-Version: 4.5.0
+Maintainer: Wong Hoi Sing Edison <hswong3i@gmail.com>
+Homepage: https://github.com/libguestfs/virt-v2v/tags
+Vcs-Browser: https://github.com/alvistack/libguestfs-virt-v2v
+Vcs-Git: https://github.com/alvistack/libguestfs-virt-v2v.git
+Build-Depends:
+ debhelper,
+ debhelper-compat (= 10),
+ pkg-config,
+ bash-completion,
+ fuse3,
+ libcapstone-dev,
+ libguestfs-dev,
+ libguestfs-ocaml-dev,
+ libguestfs-perl,
+ libjansson-dev,
+ libnbd-dev,
+ libnbd-ocaml-dev,
+ libncurses-dev,
+ libosinfo-1.0-dev,
+ libpcre2-dev,
+ libverto-dev,
+ libverto-libevent1 | libverto-libev1,
+ libvirt-dev,
+ libxml2-dev,
+ nbdkit,
+ nbdkit-plugin-python,
+ ocaml,
+ ocaml-findlib,
+ po4a,
+ sqlite3,
+ unzip,
+ xorriso,
+ zip,
+
+Package: virt-v2v
+Architecture: amd64
+Description: virtual-to-virtual machine converter
+ Virt-v2v is a program that converts a single guest from a foreign
+ hypervisor to run on KVM. It can read Linux and Windows guests running
+ on VMware, Xen, Hyper-V and some other hypervisors, and convert them to
+ KVM managed by libvirt, OpenStack, oVirt, Red Hat Virtualisation (RHV)
+ or several other targets. It can modify the guest to make it bootable on
+ KVM and install virtio drivers so it will run quickly.
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},

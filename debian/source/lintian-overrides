@@ -1,0 +1,3 @@
+virt-v2v source: no-debian-changes
+virt-v2v source: source-contains-prebuilt-windows-binary
+virt-v2v source: source-is-missing

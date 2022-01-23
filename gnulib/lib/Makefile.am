@@ -35,7 +35,8 @@ libgnu_la_SOURCES = \
 	xstrtoll.c \
 	xstrtoul.c \
 	xstrtoull.c \
-	xstrtoumax.c
+	xstrtoumax.c \
+	free.c
 libutils_la_CFLAGS = \
 	$(WARN_CFLAGS) $(WERROR_CFLAGS) \
 	$(GCC_VISIBILITY_HIDDEN)

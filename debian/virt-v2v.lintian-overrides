@@ -1,0 +1,4 @@
+virt-v2v: bad-whatis-entry
+virt-v2v: copyright-without-copyright-notice
+virt-v2v: initial-upload-closes-no-bugs
+virt-v2v: zero-byte-file-in-doc-directory
